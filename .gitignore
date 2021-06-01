@@ -48,6 +48,7 @@ bower.json
 
 # Ignore Byebug command history file.
 .byebug_history
+.lh
 
 # Ignore node_modules
 node_modules/
