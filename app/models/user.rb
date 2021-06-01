@@ -8,7 +8,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable,
          :jwt_authenticatable, jwt_revocation_strategy: self
 
-  validates_uniqueness_of :username
+  # validates_uniqueness_of :username
 
   def jwt_payload
     super.merge("foo" => "bar")
