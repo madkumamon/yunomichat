@@ -1,0 +1,26 @@
+{
+    "sourceFile": "app/models/user.rb",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1622474698324,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1622474704244,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n class User < ApplicationRecord\n \n-    validate\n+    validates_uniqueness_of\n \n end\n"
+                },
+                {
+                    "date": 1622474710372,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n class User < ApplicationRecord\n \n-    validates_uniqueness_of\n+    validates_uniqueness_of :username\n \n end\n"
+                }
+            ],
+            "date": 1622474698324,
+            "name": "Commit-0",
+            "content": "class User < ApplicationRecord\n\n    validate\n\nend\n"
+        }
+    ]
+}

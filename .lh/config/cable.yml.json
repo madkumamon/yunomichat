@@ -1,0 +1,26 @@
+{
+    "sourceFile": "config/cable.yml",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1622474538033,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1622474544994,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n development:\n   adapter: redis\n+  url: \n \n test:\n   adapter: test\n \n"
+                },
+                {
+                    "date": 1622474575468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n development:\n   adapter: redis\n-  url: \n+  url: <%= ENV.fetch(\"REDIS_URL\") { \"redis://localhost:6379/1\" } %>\n \n test:\n   adapter: test\n \n"
+                }
+            ],
+            "date": 1622474538033,
+            "name": "Commit-0",
+            "content": "development:\n  adapter: redis\n\ntest:\n  adapter: test\n\nproduction:\n  adapter: redis\n  url: <%= ENV.fetch(\"REDIS_URL\") { \"redis://localhost:6379/1\" } %>\n  channel_prefix: yunomichat_production\n"
+        }
+    ]
+}

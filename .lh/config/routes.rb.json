@@ -1,0 +1,26 @@
+{
+    "sourceFile": "config/routes.rb",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1622522674802,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1622522681167,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n Rails.application.routes.draw do\n   resources :messages\n   resources :rooms\n-  \n+  root ''\n   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html\n end\n"
+                },
+                {
+                    "date": 1622522687313,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n Rails.application.routes.draw do\n   resources :messages\n   resources :rooms\n-  root ''\n+  root 'rooms#index'\n   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html\n end\n"
+                }
+            ],
+            "date": 1622522674802,
+            "name": "Commit-0",
+            "content": "Rails.application.routes.draw do\n  resources :messages\n  resources :rooms\n  \n  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html\nend\n"
+        }
+    ]
+}
